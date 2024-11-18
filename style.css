@@ -1,0 +1,262 @@
+/* CSS RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* navigation Bar: logo and image */
+#logo {
+    margin: 2px 3px;
+}
+
+#logo img {
+    margin: 1px 15px;
+    height: 45px;
+    border-radius: 22px;
+}
+
+
+/* navigation Bar: list styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* #navbar ul li a:hover {
+    color: black;
+    background-color: white;
+} */
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 224px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('https://kvia.b-cdn.net/2020/05/MGN_1280x720_00514P00-MBCKH.jpg') no-repeat center center/cover;
+    height: 340px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+/* services section */
+
+#services {
+    margin: 12px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 28px 27px;
+    margin: 5px 15px;
+    border-radius: 60px;
+    background-color: #f9f0f0;
+}
+
+#services .box img {
+    height: 290px;
+    display: block;
+    margin: auto;
+
+}
+
+
+/* clients section */
+
+#client-section {
+    height: 344px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('https://media.istockphoto.com/id/1393259535/video/secure-payment-online-shopping-digital-wallet-mobile-wallet-safety-business-man-with-computer.jpg?b=1&s=640x640&k=20&c=odQ2fOuTLbZGlFWcZFx23zN1pmzdv2IjQQTbv_-EMbY=') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 130px;
+    background-color: #4f546f;
+}
+
+.client-items {
+    padding: 34px;
+}
+
+/* contact section */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.6;
+    background: url('https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523_1280.jpg') no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.3rem;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 20px 20px;
+
+}
+
+/* utility classes */
+.h-primary {
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.8rem;
+    padding: 43px;
+    position: relative;
+    top: 18px;
+}
+
+.h-secondary {
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.8rem;
+    padding: 20px;
+    text-decoration: 3px solid underline;
+}
+
+/* button */
+
+.btn {
+    padding: 4px 12px;
+    margin: 17px;
+    background-color: brown;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.center {
+    text-align: center;
+}
+
+/*styling background*/
+.item::before {
+    content: "";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 0vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c6c64;
+    font-family: sans-serif;
+    opacity: 5px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* styling the button*/
+.item a {
+    padding: 20px 20px;
+    display: inline-block;
+    color: #008000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+/*creating animation effect*/
+.item a:hover {
+    color: #000;
+    background: #4554f7;
+    box-shadow: 0 0 50px #a077ff;
+}
